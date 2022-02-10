@@ -1,0 +1,14 @@
+{
+  "shebang-sh": {
+    "scope": "shellscript",
+    "description": "Shebang: Bourne Shell (sh)",
+    "prefix": "shebang",
+    "body": "#!/usr/bin/env sh"
+  },
+  "shebang-bash": {
+    "scope": "shellscript",
+    "description": "Shebang: Bash (bash)",
+    "prefix": "shebang",
+    "body": "#!/usr/bin/env bash"
+  }
+}

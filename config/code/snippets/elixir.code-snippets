@@ -1,0 +1,24 @@
+{
+  "Call IO.inspect/2": {
+    "scope": "elixir",
+    "prefix": "IO",
+    "body": ["IO.inspect($1, label: :$2)"],
+    "description": "Call IO.inspect/2"
+  },
+
+  "Pipe into IO.inspect/2": {
+    "scope": "elixir",
+    "prefix": "IO",
+    "body": ["|> IO.inspect(label: :$1)"],
+    "description": "Pipe something to IO.inspect/2"
+  },
+
+  "Pipe into IO.inspect/2 with filename and line": {
+    "scope": "elixir",
+    "prefix": "IO",
+    "body": [
+      "|> IO.inspect(label: \"#{List.last(String.split(__ENV__.file, \"/\"))}:#{__ENV__.line} $1\")"
+    ],
+    "description": "Pipe into IO.inspect/2 with filename and line"
+  }
+}
