@@ -1,0 +1,80 @@
+# Homebrew Bundle
+# https://github.com/Homebrew/homebrew-bundle
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+# tap "homebrew/services"
+
+brew "asdf"
+brew "agedu"
+brew "curl"
+brew "direnv"
+# brew "exercism"
+brew "git"
+brew "htop"
+brew "httpie"
+brew "jq"
+brew "lsd"
+brew "mas"
+# brew "miller"
+brew "neovim"
+# brew "postgresql", restart_service: true
+brew "rsync"
+brew "sqlite"
+brew "shfmt"
+brew "ssh-copy-id"
+brew "tmux"
+brew "tree"
+brew "unzip"
+brew "wget"
+brew "youtube-dl"
+brew "zsh"
+
+cask "alacritty"
+cask "authy"
+cask "bitwarden"
+cask "brave-browser"
+cask "dbeaver-community"
+cask "deezer"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "firefox"
+cask "font-hack-nerd-font"
+cask "freemind"
+cask "google-chrome"
+cask "google-cloud-sdk"
+cask "google-drive"
+cask "gpg-suite"
+# cask "grammarly"
+# cask "inkscape"
+cask "keepassx"
+cask "keybase"
+cask "libreoffice"
+# cask "macs-fan-control"
+cask "macvim"
+# cask "openemu"
+cask "rectangle"
+cask "simplenote"
+cask "skype"
+cask "slack"
+# cask "steam"
+# cask "toggl"
+cask "transmission"
+cask "telegram"
+# cask "virtualbox"
+cask "visual-studio-code"
+cask "vlc"
+cask "whatsapp"
+cask "zoom"
+
+mas "Flow", id: 1423210932
+# mas "LastPass", id: 926036361
+mas "Microsoft To Do", id: 1274495053
+# mas "Slack", id: 803453959
+# mas "Tailscale", id: 1475387142
+# mas "Telegram Lite", id: 946399090
+mas "TweetDeck", id: 485812721
+# mas "WhatsApp", id: 1147396723
