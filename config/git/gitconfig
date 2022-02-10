@@ -1,0 +1,25 @@
+[user]
+  name          = Joel Jucá
+  email         = joelwallis@gmail.com
+  signingkey    = AA9F6CB28B67BDA3
+[alias]
+  bb            = commit --allow-empty -m '💥'
+  lg            = log --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
+  root          = commit --allow-empty -m 'root commit'
+  st            = status -sb
+  standup       = log --abbrev-commit --date=relative --graph --since yesterday
+[color]
+  ui            = true
+[commit]
+ gpgsign       = true
+[core]
+  editor        = nvim
+  fileMode       = false
+[credential]
+  helper        = osxkeychain
+[init]
+  defaultBranch = main
+[pull]
+  rebase        = true
+[push]
+  default       = matching
