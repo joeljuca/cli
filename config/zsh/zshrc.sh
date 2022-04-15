@@ -13,6 +13,12 @@ function setup_path() {
 
   # Homebrew OpenSSL
   export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
+
+  # Homebrew curl
+  export PATH="$(brew --prefix curl)/bin:$PATH"
+
+  # # Homebrew ssh-copy-id
+  export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
 }
 
 function setup_envs() {
