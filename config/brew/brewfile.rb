@@ -11,16 +11,18 @@ brew "asdf"
 brew "agedu"
 brew "curl"
 brew "direnv"
+brew "duf"
 # brew "exercism"
+brew "ffmpeg"
 brew "git"
 brew "htop"
 brew "httpie"
 brew "jq"
 brew "lsd"
 brew "mas"
-# brew "miller"
+brew "miller"
 brew "neovim"
-# brew "postgresql", restart_service: true
+brew "postgresql"
 brew "rsync"
 brew "sqlite"
 brew "shfmt"
@@ -63,7 +65,7 @@ cask "slack"
 # cask "steam"
 # cask "toggl"
 cask "transmission"
-cask "telegram"
+cask "telegram-desktop"
 # cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
@@ -78,3 +80,5 @@ mas "Microsoft To Do", id: 1274495053
 # mas "Telegram Lite", id: 946399090
 mas "TweetDeck", id: 485812721
 # mas "WhatsApp", id: 1147396723
+
+
