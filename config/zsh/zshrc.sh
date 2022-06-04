@@ -17,8 +17,12 @@ function setup_path() {
   # Homebrew curl
   export PATH="$(brew --prefix curl)/bin:$PATH"
 
-  # # Homebrew ssh-copy-id
+  # Homebrew ssh-copy-id
   export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
+
+  # Homebrew Golang
+  export GOPATH="$HOME/.go/bin"
+  export PATH="$HOME/.go/bin:$PATH"
 }
 
 function setup_envs() {
