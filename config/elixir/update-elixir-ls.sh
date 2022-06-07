@@ -25,22 +25,41 @@ function elixirls_update() {
 
 		local download_url="https://github.com/elixir-lsp/elixir-ls/releases/download/${elixirls_version}/elixir-ls.zip"
 		local download_prefix="$(mktemp -d)"
-		local elixirls_dir="${download_prefix}/elixir-ls-release"
+		local elixirls_dir="${download_prefix}/elixir-ls"
+		local elixirls_release_dir="${download_prefix}/elixir-ls-release"
 
 		wget -P "${download_prefix}" "${download_url}"
 
 		if [ "$(md5 -q ${download_prefix}/elixir-ls.zip)" != "${elixirls_payload_md5}" ] >/dev/null 2>&1; then
 			echo "Aborting operation - download hash is different."
 		else
+			local cwd="$(pwd)"
+
 			mkdir -p "${elixirls_dir}"
 			unzip -d "${elixirls_dir}" "${download_prefix}/elixir-ls.zip"
+
+			echo "Rebuilding ElixirLS..."
+
+			cd "${elixirls_dir}"
+			mix deps.get
+
+			mkdir -p "${elixirls_release_dir}"
+			mix elixir_ls.release -o "${elixirls_release_dir}"
+
 			rm -fR "${extension_elixirls_dir}"
-			mv "${elixirls_dir}" "${extension_dir}"
+			mv "${elixirls_release_dir}" "${extension_dir}"
+
+			rm -fR "${extension_dir}/.elixir_ls"
+
+			echo "Operation completed."
+			cd $cwd
 		fi
 
 		# Clean up
 		rm -fR "${download_prefix}"
+
 	fi
+
 }
 
 elixirls_update
