@@ -7,6 +7,7 @@
 
 function elixirls_update() {
 	local elixirls_version="v0.9.0"
+	local elixirls_payload_md5="5cc984c1f215a10476ed5d28ea4cc9c2"
 
 	if ! ls "${HOME}/.vscode/extensions" | grep "^jakebecker.elixir-ls" >/dev/null 2>&1; then
 		echo "Aborting operation - extension not installed."
@@ -27,10 +28,15 @@ function elixirls_update() {
 		local elixirls_dir="${download_prefix}/elixir-ls-release"
 
 		wget -P "${download_prefix}" "${download_url}"
-		mkdir -p "${elixirls_dir}"
-		unzip -d "${elixirls_dir}" "${download_prefix}/elixir-ls.zip"
-		rm -fR "${extension_elixirls_dir}"
-		mv "${elixirls_dir}" "${extension_dir}"
+
+		if [ "$(md5 -q ${download_prefix}/elixir-ls.zip)" != "${elixirls_payload_md5}" ] >/dev/null 2>&1; then
+			echo "Aborting operation - download hash is different."
+		else
+			mkdir -p "${elixirls_dir}"
+			unzip -d "${elixirls_dir}" "${download_prefix}/elixir-ls.zip"
+			rm -fR "${extension_elixirls_dir}"
+			mv "${elixirls_dir}" "${extension_dir}"
+		fi
 
 		# Clean up
 		rm -fR "${download_prefix}"
