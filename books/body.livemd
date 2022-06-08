@@ -1,0 +1,5 @@
+# Body
+
+## What
+
+Body is my livebook for calculations on my body measures. I take measures pretty much every Sunday (or every Monday if I forget to take them during the week),
