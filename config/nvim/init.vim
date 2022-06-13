@@ -10,5 +10,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
