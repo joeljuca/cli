@@ -1,4 +1,4 @@
 {
-  "node": "/opt/homebrew/opt/node",
+  "node": "/opt/homebrew/bin/node",
   "pro": false
 }
