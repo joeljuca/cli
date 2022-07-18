@@ -61,6 +61,15 @@ function setup_aliases() {
   fi
 }
 
+function setup_zsh_autocomplete {
+  local zsh_autocomplete_dir="${HOME}/repos/zsh-autocomplete"
+  local skip_global_compinit=1
+
+  if [ -d "${zsh_autocomplete_dir}" ]; then
+    source "${zsh_autocomplete_dir}/zsh-autocomplete.plugin.zsh"
+  fi
+}
+
 function setup_asdf() {
   # asdf is either in $HOME or in under Homebrew's umbrella (macOS-specific)
   if [ -f "$(brew --prefix)/opt/asdf/libexec/asdf.sh" ]; then
@@ -104,3 +113,4 @@ setup_direnv
 setup_gcloud_cli
 
 setup_aliases
+setup_zsh_autocomplete
