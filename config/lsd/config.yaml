@@ -1,0 +1,13 @@
+# See https://github.com/Peltoche/lsd#configuration
+
+ignore-globs:
+  - .git
+  - node_modules
+
+indicators: true
+
+size: short
+
+sorting:
+  column: name
+  dir-grouping: first

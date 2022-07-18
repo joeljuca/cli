@@ -55,8 +55,9 @@ function setup_aliases() {
   alias vim="nvim"
 
   # https://github.com/Peltoche/lsd
+  # configuration handled through config file (~/.config/lsd/config.yaml)
   if which lsd >/dev/null 2>&1; then
-    alias ls="lsd --date=relative --group-dirs=first --size=short"
+    alias ls="lsd"
   fi
 }
 
