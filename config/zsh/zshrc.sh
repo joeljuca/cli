@@ -41,6 +41,16 @@ function setup_envs() {
   export KERL_DOC_TARGETS="chunks"
 }
 
+function setup_ohmyzsh {
+  ZSH=$HOME/.oh-my-zsh
+  ZSH_THEME="avit"
+  ZSH_TMUX_AUTOSTART=true
+  ZSH_TMUX_AUTOCONNECT=true
+  plugins=(git tmux)
+
+  source $ZSH/oh-my-zsh.sh
+}
+
 function setup_aliases() {
   alias :q="exit"
   alias cask="brew cask"
@@ -104,8 +114,7 @@ function setup_gcloud_cli() {
 
 setup_path
 setup_envs
-
-source $ZSH/oh-my-zsh.sh
+setup_ohmyzsh
 
 # executables
 setup_asdf
