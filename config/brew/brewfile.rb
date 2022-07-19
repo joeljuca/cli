@@ -1,6 +1,7 @@
 # Homebrew Bundle
 # https://github.com/Homebrew/homebrew-bundle
 
+tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
