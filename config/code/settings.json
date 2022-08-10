@@ -11,7 +11,10 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
+  "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Atom One Dark",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredLightColorTheme": "Atom One Light",
 
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
