@@ -23,6 +23,9 @@ function setup_path() {
   # Homebrew Golang
   export GOPATH="$HOME/.go/bin"
   export PATH="$HOME/.go/bin:$PATH"
+
+  # Homebrew SQLite
+  export PATH="$(brew --prefix sqlite)/bin:$PATH"
 }
 
 function setup_envs() {
