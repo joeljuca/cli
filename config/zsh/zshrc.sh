@@ -26,6 +26,9 @@ function setup_path() {
 
   # Homebrew SQLite
   export PATH="$(brew --prefix sqlite)/bin:$PATH"
+
+  # Python binaries (pkgs installed with --user)
+  export PATH="$(python3 -m site --user-base)/bin:$PATH"
 }
 
 function setup_envs() {
