@@ -75,6 +75,11 @@ function setup_aliases() {
   if which lsd >/dev/null 2>&1; then
     alias ls="lsd"
   fi
+
+  # use sqlite3 as sqlqite
+  if ! which sqlite >/dev/null 2>&1 && which sqlite3 >/dev/null  2>&1; then
+    alias sqlite="sqlite3"
+  fi
 }
 
 function setup_zsh_autocomplete {
