@@ -93,12 +93,14 @@ cask "whatsapp"
 cask "zoom"
 
 mas "Flow", id: 1423210932
+mas "Microsoft To Do", id: 1274495053
+mas "Tailscale", id: 1475387142
+mas "Toggl Track", id: 1291898086
+mas "TweetDeck", id: 485812721
 # mas "GarageBand", id: 682658836
 # mas "iMovie", id: 408981434
 # mas "Keynote", id: 409183694
 # mas "LastPass", id: 926036361
-mas "Microsoft To Do", id: 1274495053
 # mas "Numbers", id: 409203825
 # mas "Pages", id: 409201541
-# mas "Tailscale", id: 1475387142
-mas "TweetDeck", id: 485812721
+
