@@ -11,6 +11,7 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "explorer.confirmDragAndDrop": false,
+  "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Atom One Dark",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
