@@ -6,6 +6,20 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOCONNECT=true
 plugins=(git tmux)
 
+function setup_main() {
+  setup_path
+  setup_envs
+  setup_ohmyzsh
+
+  # executables
+  setup_asdf
+  setup_direnv
+  setup_gcloud_cli
+
+  setup_aliases
+  setup_zsh_autocomplete
+}
+
 function setup_path() {
   # Homebrew
   export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
@@ -123,14 +137,4 @@ function setup_gcloud_cli() {
   fi
 }
 
-setup_path
-setup_envs
-setup_ohmyzsh
-
-# executables
-setup_asdf
-setup_direnv
-setup_gcloud_cli
-
-setup_aliases
-setup_zsh_autocomplete
+setup_main
