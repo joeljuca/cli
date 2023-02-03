@@ -17,7 +17,7 @@ function setup_main() {
   setup_gcloud_cli
 
   setup_aliases
-  setup_zsh_autocomplete
+  # setup_zsh_autocomplete
 }
 
 function setup_path() {
