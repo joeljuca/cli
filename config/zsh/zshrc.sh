@@ -1,11 +1,5 @@
 # https://github.com/joeljuca/cli
 
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="avit"
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOCONNECT=true
-plugins=(git tmux)
-
 function setup_main() {
   setup_path
   setup_envs
@@ -62,8 +56,8 @@ function setup_envs() {
 }
 
 function setup_ohmyzsh {
-  ZSH=$HOME/.oh-my-zsh
-  ZSH_THEME="avit"
+  ZSH="$HOME/.oh-my-zsh"
+  ZSH_THEME="terminalparty"
   ZSH_TMUX_AUTOSTART=true
   ZSH_TMUX_AUTOCONNECT=true
   plugins=(git tmux)
