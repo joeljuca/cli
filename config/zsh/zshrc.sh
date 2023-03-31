@@ -25,9 +25,6 @@ function setup_path() {
   # Homebrew curl
   export PATH="$(brew --prefix curl)/bin:$PATH"
 
-  # Homebrew ssh-copy-id
-  export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
-
   # Homebrew GnuPG
   #
   # Apparently, with deprecation of GPG 1.x lots of things
@@ -37,8 +34,11 @@ function setup_path() {
   export GPG_TTY="$(tty)"
 
   # Homebrew Golang
-  export GOPATH="$HOME/.go/bin"
+  export GOPATH="$HOME/.go"
   export PATH="$HOME/.go/bin:$PATH"
+
+  # Homebrew ssh-copy-id
+  export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
 
   # Homebrew SQLite
   export PATH="$(brew --prefix sqlite)/bin:$PATH"
