@@ -28,6 +28,14 @@ function setup_path() {
   # Homebrew ssh-copy-id
   export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
 
+  # Homebrew GnuPG
+  #
+  # Apparently, with deprecation of GPG 1.x lots of things
+  # just broke out of no reason (aka.: I did not know why).
+  # After a couple of searches I got a combination of steps
+  # to make it work – being one of them to export this env.
+  export GPG_TTY="$(tty)"
+
   # Homebrew Golang
   export GOPATH="$HOME/.go/bin"
   export PATH="$HOME/.go/bin:$PATH"
