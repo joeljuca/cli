@@ -26,5 +26,5 @@ set paste " allows Cmd-V inside Vim/Neovim/MacVim
 "
 
 if has("gui_macvim")
-  set guifont=Hack\ Nerd\ Font:h16
+  set guifont=Hack\ Nerd\ Font:h12
 endif
