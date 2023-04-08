@@ -75,6 +75,7 @@ function setup_ohmyzsh {
 
 function setup_aliases() {
   alias :q="exit"
+  alias bx="bundle exec"
   alias cask="brew cask"
   alias fuck_node_modules="find . -type d -name node_modules -exec rm -fR {} \;"
   alias grepi="grep -i"
@@ -83,6 +84,7 @@ function setup_aliases() {
   alias htop="htop -d 3"
   alias http="http --timeout=600"
   alias https="http --default-scheme=https --timeout=600"
+  alias m="make"
   alias px="ps aux"
   alias vim="nvim"
 
