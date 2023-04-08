@@ -1,5 +1,4 @@
 offline/*
 !offline/.gitkeep
-
 .DS_Store
-
+*.swp
