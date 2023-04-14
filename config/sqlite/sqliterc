@@ -1,0 +1,5 @@
+.echo on
+.auth off
+.mode column
+.headers on
+.prompt "> "
