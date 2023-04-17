@@ -9,6 +9,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'preservim/nerdtree'
 Plug 'vim-syntastic/syntastic'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'janet-lang/janet.vim'
 " Plug 'Olical/conjure'
 
 call plug#end()
