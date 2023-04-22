@@ -1,0 +1,98 @@
+{
+  "create: table": {
+    "prefix": "create: table",
+    "body": [
+      "create table ${1:[table name]} (",
+      "  id integer primary key,",
+      "  $0",
+      "",
+      "  meta text,",
+      "",
+      "  check(json_valid(meta) and json_type(meta) == \"object\")",
+      ") strict;"
+    ]
+  },
+
+  "create: index": {
+    "prefix": "create: index",
+    "body": [
+      "create ${1:unique }index idx_${2:[table name]}_${3:[column name]} on ${2:[table name]} (${3:[column name]}${4: collate nocase});",
+      "$0"
+    ]
+  },
+
+  "check": {
+    "prefix": "check",
+    "body": ["check(${1:[constraint body]}),", "$0"]
+  },
+
+  "check: boolean": {
+    "prefix": "check: boolean",
+    "body": ["check(${1:[column name]} in (0, 1)),", "$0"]
+  },
+
+  "check: integer between": {
+    "prefix": "check: integer between",
+    "body": [
+      "check(${1:[column name]} between ${2:[min]} and ${3:[max]}),",
+      "$0"
+    ]
+  },
+
+  "col": {
+    "prefix": "col: generic",
+    "body": [
+      "${1:[column name]} ${2:[column type (text|integer|real|blob|any)]}${3: not null}${4: default $5},",
+      "$0"
+    ]
+  },
+
+  "col: text": {
+    "prefix": "col: text",
+    "body": ["${1:[column name]} text${2: not null}}${3: default $4},", "$0"]
+  },
+
+  "col: integer": {
+    "prefix": "col: integer",
+    "body": ["${1:[column name]} integer${2: not null}${3: default $4},", "$0"]
+  },
+
+  "col: boolean": {
+    "prefix": "col: boolean",
+    "body": [
+      "is_${1:[column name]} integer not null default ${2:[default value (0|1)]},",
+      "$0",
+      "",
+      "check(is_$1 in (0, 1)),"
+    ]
+  },
+
+  "col: created_at": {
+    "prefix": "col: created_at",
+    "body": ["created_at text${1: not null},", "$0"]
+  },
+
+  "col: updated_at": {
+    "prefix": "col: updated_at",
+    "body": ["updated_at text${1: not null},", "$0"]
+  },
+
+  "col: timestamps": {
+    "prefix": "col: timestamps",
+    "body": [
+      "created_at text${1: not null},",
+      "updated_at text${1: not null},",
+      "$0"
+    ]
+  },
+
+  "col: json": {
+    "prefix": "col: json",
+    "body": [
+      "${1:[column name]} text${2: not null}${3: default \"{$4}\"},",
+      "$0",
+      "",
+      "check(json_valid(${1:[column name]}) and json_type(${1:[column name]}) = \"${5:object}\"),"
+    ]
+  }
+}
