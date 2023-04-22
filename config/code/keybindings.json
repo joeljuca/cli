@@ -1,5 +1,13 @@
 [
   {
+    "key": "cmd+=",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
     "key": "ctrl+tab",
     "command": "workbench.action.nextEditor"
   },
