@@ -49,7 +49,7 @@
 
   "col: text": {
     "prefix": "col: text",
-    "body": ["${1:[column name]} text${2: not null}}${3: default $4},", "$0"]
+    "body": ["${1:[column name]} text${2: not null}${3: default $4},", "$0"]
   },
 
   "col: integer": {
