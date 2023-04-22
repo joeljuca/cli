@@ -74,16 +74,12 @@
 
   "col: updated_at": {
     "prefix": "col: updated_at",
-    "body": ["updated_at text${1: not null},", "$0"]
+    "body": ["updated_at text,", "$0"]
   },
 
   "col: timestamps": {
     "prefix": "col: timestamps",
-    "body": [
-      "created_at text${1: not null},",
-      "updated_at text${1: not null},",
-      "$0"
-    ]
+    "body": ["created_at text not null,", "updated_at text,", "$0"]
   },
 
   "col: json": {
