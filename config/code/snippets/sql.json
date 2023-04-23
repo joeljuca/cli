@@ -8,7 +8,7 @@
       "",
       "  meta text,",
       "",
-      "  check(json_valid(meta) and json_type(meta) == \"object\")",
+      "  check(json_valid(meta) and json_type(meta) = \"object\")",
       ") strict;"
     ]
   },
