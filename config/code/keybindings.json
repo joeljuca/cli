@@ -1,5 +1,9 @@
 [
   {
+    "key": "cmd+0",
+    "command": "editor.action.fontZoomReset"
+  },
+  {
     "key": "cmd+=",
     "command": "editor.action.fontZoomIn"
   },
