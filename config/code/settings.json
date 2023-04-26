@@ -14,7 +14,7 @@
   "explorer.confirmDragAndDrop": false,
   "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.colorTheme": "Monokai",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
