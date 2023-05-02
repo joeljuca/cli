@@ -12,6 +12,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'janet-lang/janet.vim'
 Plug 'hylang/vim-hy'
 Plug 'elixir-editors/vim-elixir'
+Plug 'editorconfig/editorconfig-vim'
 " Plug 'Olical/conjure'
 
 call plug#end()
