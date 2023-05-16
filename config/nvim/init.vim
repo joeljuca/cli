@@ -4,17 +4,17 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'preservim/nerdtree'
-Plug 'vim-syntastic/syntastic'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'janet-lang/janet.vim'
-Plug 'hylang/vim-hy'
 Plug 'elixir-editors/vim-elixir'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'dense-analysis/ale'
-" Plug 'Olical/conjure'
+Plug 'hylang/vim-hy'
+Plug 'janet-lang/janet.vim'
+Plug 'olical/conjure'
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-erlang/vim-erlang-runtime'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
