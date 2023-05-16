@@ -8,6 +8,7 @@
   root          = commit --allow-empty -m 'root commit'
   st            = status -sb
   standup       = log --abbrev-commit --date=relative --graph --since yesterday
+  wip           = commit -am 'wip'
 [color]
   ui            = true
 [commit]
