@@ -13,6 +13,7 @@ Plug 'janet-lang/janet.vim'
 Plug 'hylang/vim-hy'
 Plug 'elixir-editors/vim-elixir'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'dense-analysis/ale'
 " Plug 'Olical/conjure'
 
 call plug#end()
