@@ -84,7 +84,7 @@ function setup_aliases() {
   alias htop="htop -d 3"
   alias http="http --timeout=600"
   alias https="http --default-scheme=https --timeout=600"
-  alias mk="make"
+  alias m="make"
   alias px="ps aux"
   alias vim="nvim"
 
