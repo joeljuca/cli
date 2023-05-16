@@ -11,10 +11,10 @@
 [color]
   ui            = true
 [commit]
- gpgsign       = true
+ gpgsign        = true
 [core]
   editor        = nvim
-  fileMode       = false
+  fileMode      = false
 [credential]
   helper        = osxkeychain
 [init]
