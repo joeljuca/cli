@@ -12,6 +12,9 @@ font:
 window:
   opacity: 0.8
 
+key_bindings:
+  - { key: L, mods: Control, chars: "clear\n" }
+
 # Theme: Ayu Dark
 # https://github.com/alacritty/alacritty/wiki/Color-schemes
 
