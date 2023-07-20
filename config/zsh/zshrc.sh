@@ -37,6 +37,9 @@ function setup_path() {
   export GOPATH="$HOME/.go"
   export PATH="$HOME/.go/bin:$PATH"
 
+  # Homebrew Ruby
+  export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
   # Homebrew ssh-copy-id
   export PATH="$(brew --prefix ssh-copy-id)/bin:$PATH"
 
