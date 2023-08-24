@@ -11,7 +11,6 @@ function setup_main() {
   setup_gcloud_cli
 
   setup_aliases
-  # setup_zsh_autocomplete
 }
 
 function setup_path() {
@@ -100,15 +99,6 @@ function setup_aliases() {
   # use sqlite3 as sqlqite
   if ! which sqlite >/dev/null 2>&1 && which sqlite3 >/dev/null  2>&1; then
     alias sqlite="sqlite3"
-  fi
-}
-
-function setup_zsh_autocomplete {
-  local zsh_autocomplete_dir="${HOME}/repos/zsh-autocomplete"
-  local skip_global_compinit=1
-
-  if [ -d "${zsh_autocomplete_dir}" ]; then
-    source "${zsh_autocomplete_dir}/zsh-autocomplete.plugin.zsh"
   fi
 }
 
