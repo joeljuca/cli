@@ -1,0 +1,30 @@
+# Hello, Livebook!
+
+```elixir
+Mix.install([
+  {:httpoison, "~> 2.0"},
+  {:jason, "~> 1.4"}
+])
+```
+
+## Star Wars API
+
+```elixir
+defmodule Swapi do
+  @base_url "https://swapi.dev/api"
+
+  def main() do
+    IO.puts(@base_url)
+
+    case get_planet(1) do
+      {:ok, response} -> IO.inspect(response, label: :response)
+    end
+  end
+
+  def get_planet(planet_id) do
+    HTTPoison.get("#{@base_url}/planets/#{planet_id}")
+  end
+end
+
+Swapi.main()
+```
