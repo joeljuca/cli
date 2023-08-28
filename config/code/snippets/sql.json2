@@ -26,15 +26,17 @@
   },
   "check": {
     "prefix": "check",
-    "body": ["check(${1:[constraint body]}),", "$0"]
+    "body": [
+      "check(${1:[constraint body]}),",
+      "$0"
+    ]
   },
   "check: boolean": {
     "prefix": "check: boolean",
-    "body": ["check(${1:[column name]} in (0, 1)),", "$0"]
-  },
-  "check: integer positive": {
-    "prefix": "check: integer positive",
-    "body": ["check(${1:[column name]} >= 0),", "$0"]
+    "body": [
+      "check(${1:[column name]} in (0, 1)),",
+      "$0"
+    ]
   },
   "check: integer between": {
     "prefix": "check: integer between",
@@ -52,11 +54,17 @@
   },
   "col: text": {
     "prefix": "col: text",
-    "body": ["${1:[column name]} text${2: not null}${3: default $4},", "$0"]
+    "body": [
+      "${1:[column name]} text${2: not null}${3: default $4},",
+      "$0"
+    ]
   },
   "col: integer": {
     "prefix": "col: integer",
-    "body": ["${1:[column name]} integer${2: not null}${3: default $4},", "$0"]
+    "body": [
+      "${1:[column name]} integer${2: not null}${3: default $4},",
+      "$0"
+    ]
   },
   "col: boolean": {
     "prefix": "col: boolean",
@@ -69,15 +77,25 @@
   },
   "col: created_at": {
     "prefix": "col: created_at",
-    "body": ["created_at text${1: not null},", "$0"]
+    "body": [
+      "created_at text${1: not null},",
+      "$0"
+    ]
   },
   "col: updated_at": {
     "prefix": "col: updated_at",
-    "body": ["updated_at text,", "$0"]
+    "body": [
+      "updated_at text,",
+      "$0"
+    ]
   },
   "col: timestamps": {
     "prefix": "col: timestamps",
-    "body": ["created_at text not null,", "updated_at text,", "$0"]
+    "body": [
+      "created_at text not null,",
+      "updated_at text,",
+      "$0"
+    ]
   },
   "col: json": {
     "prefix": "col: json",
