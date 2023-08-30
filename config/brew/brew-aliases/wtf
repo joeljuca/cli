@@ -1,0 +1,6 @@
+#! /opt/homebrew/bin/bash
+# alias: brew wtf
+#:  * `wtf` [args...]
+#:    `brew wtf` is an alias for `brew info`
+brew info $*
+
