@@ -1,5 +1,7 @@
 # See https://github.com/Peltoche/lsd#configuration
 
+date: +%Y-%m-%dT%H:%M:%SZ
+
 ignore-globs:
   - .git
   - node_modules
