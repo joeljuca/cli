@@ -1,0 +1,6 @@
+#! /opt/homebrew/bin/bash
+# alias: brew u
+#:  * `u` [args...]
+#:    `brew u` is an alias for `brew uninstall`
+brew uninstall $*
+
