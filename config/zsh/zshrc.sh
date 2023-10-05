@@ -82,6 +82,8 @@ function setup_aliases() {
   alias fuck_node_modules="find . -type d -name node_modules -exec rm -fR {} \;"
   alias grepi="grep -i"
   alias gshh="git show HEAD"
+  alias gshhn="git show HEAD --name-only"
+  alias gshn="git show --name-only"
   alias gzip="gzip -k"
   alias htop="htop -d 3"
   alias http="http --timeout=600"
