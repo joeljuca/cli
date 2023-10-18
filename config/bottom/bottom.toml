@@ -1,0 +1,10 @@
+# bottom config. https://github.com/ClementTsang/bottom
+
+[flags]
+battery = true
+color = "nord-light"
+enable_gpu_memory = true
+group_processes = true
+rate = "500ms"
+#regex = false
+tree = true
