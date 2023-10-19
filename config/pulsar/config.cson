@@ -1,0 +1,8 @@
+"*":
+  core:
+    openEmptyEditorOnStart: false
+  welcome:
+    showOnStartup: false
+".shell.source":
+  editor:
+    scrollPastEnd: true
