@@ -1,0 +1,9 @@
+// Zed. https://zed.dev
+{
+  "base_keymap": "Atom",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "theme": "Andromeda",
+}
