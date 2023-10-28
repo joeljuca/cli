@@ -8,12 +8,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'elixir-editors/vim-elixir'
+Plug 'olical/conjure'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 " Plug 'hylang/vim-hy'
 " Plug 'janet-lang/janet.vim'
-" Plug 'olical/conjure'
 " Plug 'vim-erlang/vim-erlang-runtime'
 
 call plug#end()
