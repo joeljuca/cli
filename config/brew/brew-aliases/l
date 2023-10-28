@@ -1,0 +1,6 @@
+#! /opt/homebrew/bin/bash
+# alias: brew l
+#:  * `l` [args...]
+#:    `brew l` is an alias for `brew list`
+brew list $*
+
