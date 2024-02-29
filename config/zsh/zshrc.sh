@@ -59,6 +59,9 @@ function setup_path() {
 }
 
 function setup_envs() {
+  # Disable Homebrew's problematic auto-updates
+  export HOMEBREW_NO_AUTO_UPDATE=1
+
   export HISTCONTROL="ignoreboth"
 
   # Elixir/Erlang-related. Enable IEx history, and put docs in REPL
