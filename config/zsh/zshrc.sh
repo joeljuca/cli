@@ -37,6 +37,9 @@ function setup_path() {
     # Homebrew Postgres
     export PATH="$(brew --prefix postgresql@15)/bin:$PATH"
 
+    # Homebrew Redis
+    export PATH="$(brew --prefix redis@6.2)/bin:$PATH"
+
     # Homebrew Ruby
     export PATH="$(brew --prefix ruby)/bin:$PATH"
 
