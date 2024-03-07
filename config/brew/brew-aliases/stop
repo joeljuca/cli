@@ -1,0 +1,6 @@
+#! /opt/homebrew/bin/bash
+# alias: brew stop
+#:  * `stop` [args...]
+#:    `brew stop` is an alias for `brew services stop`
+brew services stop $*
+
