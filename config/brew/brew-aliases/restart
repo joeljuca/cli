@@ -1,0 +1,6 @@
+#! /opt/homebrew/bin/bash
+# alias: brew restart
+#:  * `restart` [args...]
+#:    `brew restart` is an alias for `brew services restart`
+brew services restart $*
+
