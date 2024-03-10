@@ -26,6 +26,11 @@ function setup_path() {
     # Homebrew curl
     export PATH="$(brew --prefix curl)/bin:$PATH"
 
+    # Homebrew Guile
+    export GUILE_LOAD_PATH="$(brew --prefix)/share/guile/site/3.0"
+    export GUILE_LOAD_COMPILED_PATH="$(brew --prefix)/lib/guile/3.0/site-ccache"
+    export GUILE_SYSTEM_EXTENSIONS_PATH="$(brew --prefix)/lib/guile/3.0/extensions"
+
     # Homebrew GnuPG
     #
     # Apparently, with deprecation of GPG 1.x lots of things
