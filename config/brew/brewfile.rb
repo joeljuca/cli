@@ -45,6 +45,7 @@ brew "miller"
 brew "neovim"
 brew "node"
 brew "openssl@1.1"
+brew "openssl@3"
 brew "pandoc"
 brew "pass"
 brew "postgresql@14", restart_service: true
