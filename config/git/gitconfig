@@ -1,7 +1,7 @@
 [user]
   name          = Joel Jucá
-  email         = joelwallis@gmail.com
-  signingkey    = AA9F6CB28B67BDA3
+  email         = joeljuca@proton.me
+  signingkey    = 8D2AB265
 [alias]
   bb            = commit --allow-empty -m '💥'
   lg            = log --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
