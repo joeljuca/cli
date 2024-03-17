@@ -2,7 +2,7 @@
   "atomKeymap.promptV3Features": true,
   "editor.fontFamily": "'Hack Nerd Font', Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -14,7 +14,7 @@
   "explorer.confirmDragAndDrop": false,
   "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "Bearded Theme Black & Amethyst",
+  "workbench.colorTheme": "SynthWave '84",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
