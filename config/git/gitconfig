@@ -26,3 +26,5 @@
   default       = matching
 [gpg]
   program       = gpg2
+[url "git@github.com:"]
+	insteadOf = https://github.com/
