@@ -48,6 +48,7 @@ brew "openssl@1.1"
 brew "openssl@3"
 brew "pandoc"
 brew "pass"
+brew "pinentry"
 brew "postgresql@14", restart_service: true
 brew "rsync"
 brew "rlwrap" # Clojure dependency
