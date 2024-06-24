@@ -39,6 +39,9 @@ function setup_path() {
     # to make it work – being one of them to export this env.
     export GPG_TTY="$(tty)"
 
+    # Homebrew Make
+    export PATH="$(brew --prefix make)/libexec/gnubin:$PATH"
+
     # Homebrew Postgres
     export PATH="$(brew --prefix postgresql@15)/bin:$PATH"
 
