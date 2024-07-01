@@ -50,6 +50,7 @@ brew "openssl@3"
 brew "pandoc"
 brew "pass"
 brew "pinentry"
+brew "pipx"
 brew "postgresql@14", restart_service: true
 brew "rsync"
 brew "rlwrap" # Clojure dependency

@@ -66,6 +66,9 @@ function setup_path() {
   if which python3 >/dev/null 2>&1; then
     # pkgs installed with --user
     export PATH="$(python3 -m site --user-base)/bin:$PATH"
+
+    # pipx. https://pipx.pypa.io
+    export PATH="$HOME/.local/bin:$PATH"
   fi
 }
 
