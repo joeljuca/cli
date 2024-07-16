@@ -14,6 +14,9 @@ function setup_main() {
 }
 
 function setup_path() {
+  # User-specific executables
+  export PATH="$HOME/.bin:$PATH"
+
   # Homebrew
   export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
   export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:$PATH"
