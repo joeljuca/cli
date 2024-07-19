@@ -14,7 +14,7 @@
   "explorer.confirmDragAndDrop": false,
   "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "Atom One Light",
   "workbench.preferredDarkColorTheme": "Atom One Dark",
   "workbench.preferredLightColorTheme": "Atom One Light",
 
