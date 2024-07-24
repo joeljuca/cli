@@ -59,6 +59,9 @@ function setup_path() {
 
     # Homebrew SQLite
     export PATH="$(brew --prefix sqlite)/bin:$PATH"
+
+    # Homebrew MySQL (client-only)
+    export PATH="$(brew --prefix mysql-client@5.7)/bin:$PATH"
   fi
 
   # Golang
