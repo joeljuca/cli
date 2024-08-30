@@ -3,6 +3,7 @@
   "editor.fontFamily": "'Hack Nerd Font', Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.fontWeight": "bold",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -15,8 +16,8 @@
   "telemetry.telemetryLevel": "off",
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Atom One Light",
-  "workbench.preferredDarkColorTheme": "Atom One Dark",
-  "workbench.preferredLightColorTheme": "Atom One Light",
+  "workbench.preferredDarkColorTheme": "Ayu Dark",
+  "workbench.preferredLightColorTheme": "Ayu Light",
 
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
