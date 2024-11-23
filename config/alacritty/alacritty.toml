@@ -1,5 +1,14 @@
 # https://alacritty.org
 
+[general]
+import = [
+  # "~/.config/alacritty/themes/themes/everforest_dark.toml",
+  # "~/.config/alacritty-theme/themes/everforest_light.toml",
+
+  # "~/.config/alacritty-theme/themes/catppuccin_frappe.toml",
+  # "~/.config/alacritty-theme/themes/catppuccin_latte.toml",
+]
+
 [cursor.style]
 shape = "Underline"
 
@@ -8,6 +17,7 @@ size = 14
 
 [font.normal]
 family = "Hack Nerd Font"
+style = "Bold"
 
 [window]
 opacity = 0.8
@@ -18,30 +28,3 @@ opacity = 0.8
 # """
 # key = "L"
 # mods = "Control"
-
-# Theme: Ayu Dark
-# https://github.com/alacritty/alacritty/wiki/Color-schemes
-
-[colors.primary]
-background = "#0A0E14"
-foreground = "#B3B1AD"
-
-[colors.bright]
-black = "#686868"
-blue = "#59C2FF"
-cyan = "#95E6CB"
-green = "#C2D94C"
-magenta = "#FFEE99"
-red = "#F07178"
-white = "#FFFFFF"
-yellow = "#FFB454"
-
-[colors.normal]
-black = "#01060E"
-blue = "#53BDFA"
-cyan = "#90E1C6"
-green = "#91B362"
-magenta = "#FAE994"
-red = "#EA6C73"
-white = "#C7C7C7"
-yellow = "#F9AF4F"
