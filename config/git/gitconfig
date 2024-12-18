@@ -4,6 +4,8 @@
   signingkey    = 8D2AB265
 [alias]
   bb            = commit --allow-empty -m '💥'
+  lgrep         = lg --grep
+  lgrepi        = lg -i --grep
   lg            = log --abbrev-commit --date=relative --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
   root          = commit --allow-empty -m 'root commit'
   st            = status -sb
