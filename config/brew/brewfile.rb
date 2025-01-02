@@ -129,14 +129,15 @@ mas "Tailscale", id: 1475387142
 mas "Toggl Track", id: 1291898086
 mas "TweetDeck", id: 485812721
 mas "Xcode", id: 497799835
+mas "WireGuard", id: 1451685025
 
 vscode "akamud.vscode-theme-onedark"
 vscode "akamud.vscode-theme-onelight"
 # vscode "dorzey.vscode-sqlfluff"
 vscode "EditorConfig.EditorConfig"
 vscode "esbenp.prettier-vscode"
-vscode "GraphQL.vscode-graphql"
-vscode "GraphQL.vscode-graphql-syntax"
+# vscode "GraphQL.vscode-graphql"
+# vscode "GraphQL.vscode-graphql-syntax"
 vscode "JakeBecker.elixir-ls"
 # vscode "janet-lang.vscode-janet"
 # vscode "jetmartin.bats"
