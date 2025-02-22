@@ -17,8 +17,8 @@
   "terminal.integrated.fontLigatures": true,
   "window.autoDetectColorScheme": true,
   "workbench.colorTheme": "Atom One Light",
-  "workbench.preferredDarkColorTheme": "Ayu Dark",
-  "workbench.preferredLightColorTheme": "Ayu Light",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredLightColorTheme": "Atom One Light",
 
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
