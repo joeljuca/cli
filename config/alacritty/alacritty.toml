@@ -13,7 +13,7 @@ import = [
 shape = "Underline"
 
 [font]
-size = 14
+size = 16
 
 [font.normal]
 family = "Hack Nerd Font"
