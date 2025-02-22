@@ -5,7 +5,7 @@ import = [
   # "~/.config/alacritty/themes/themes/everforest_dark.toml",
   # "~/.config/alacritty-theme/themes/everforest_light.toml",
 
-  # "~/.config/alacritty-theme/themes/catppuccin_frappe.toml",
+  "~/.config/alacritty-theme/themes/catppuccin_frappe.toml",
   # "~/.config/alacritty-theme/themes/catppuccin_latte.toml",
 ]
 
