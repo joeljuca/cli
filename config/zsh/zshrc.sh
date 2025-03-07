@@ -131,6 +131,7 @@ function setup_aliases() {
   alias gshh="git show HEAD"
   alias gshhn="git show HEAD --name-only"
   alias gshn="git show --name-only"
+  alias gsur="git submodule update --init --recursive"
   alias gzip="gzip -k"
   alias htop="htop -d 3"
   alias http="http --timeout=600"
