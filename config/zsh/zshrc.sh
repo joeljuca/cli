@@ -140,6 +140,7 @@ function setup_aliases() {
   alias m="make"
   alias pls="make"
   alias px="ps aux"
+  alias rsync="rsync -crv --progress"
   alias vim="nvim"
 
   # https://github.com/Peltoche/lsd, https://github.com/lsd-rs/lsd
