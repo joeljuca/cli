@@ -124,6 +124,7 @@ function setup_aliases() {
   alias :q="exit"
   alias bx="bundle exec"
   alias bottom="btm"
+  alias diff="diff --color -r"
   alias btm="btm -C ~/repos/cli/config/bottom/bottom.toml"
   alias cask="brew cask"
   alias fuck_node_modules="find . -type d -name node_modules -exec rm -fR {} \;"
